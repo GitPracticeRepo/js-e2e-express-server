@@ -1,0 +1,21 @@
+pipeline{
+ 
+agent any
+ 
+stages{
+    stage ('clone the code'){
+        steps{
+            git branch: 'main', url: 'https://github.com/maramvenkatareddy/node_js.git'
+        }
+    }
+ 
+    stage ('buildthecode'){
+        steps{
+            sh 'npm install'
+ 
+        }
+    }
+}
+ 
+}
+ 

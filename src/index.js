@@ -1,6 +1,7 @@
+# index
 const server = require('./server');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 server.create()
     .then(app => {
